@@ -20,7 +20,6 @@ closeCallButton.addEventListener('click', function () {
   overlay.classList.remove('overlay--active');
 });
 
-
 // feedback modal
 var feedbackButton = document.querySelector('.feedback-btn');
 var feedbackButtonBurger = document.querySelector('.brg-feedback-btn');

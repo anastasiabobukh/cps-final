@@ -119,7 +119,7 @@
     display: flex;
     justify-content: flex-end;
     cursor: pointer;
-    background: url('/src/img/expand.svg') no-repeat left center;
+    background: url('../img/expand.svg') no-repeat left center;
 
     &--hidden {
       @include hidden-btn;
