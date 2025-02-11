@@ -1,0 +1,34 @@
+.swiper {
+  display: flex;
+
+  &-pagination {
+    text-align: center;
+
+    &-bullet {
+      width: 12px;
+      height: 12px;
+      background-color: $colorGainsboro;
+
+      &-active {
+        background-color: $colorPhilippineSilver;
+      }
+    }
+  }
+}
+
+.swiper::after {
+  content: '';
+  background: $colorSwiperGradient;
+  width: 24px;
+  height: 100px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 2;
+}
+
+@media (min-width: 768px) {
+  .swiper-pagination {
+    display: none;
+  }
+}

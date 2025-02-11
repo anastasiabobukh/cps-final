@@ -1,0 +1,29 @@
+@mixin swiper-card {
+  display: flex;
+  width: 100%;
+  max-width: 240px;
+  border-radius: 6px;
+  border: 1px solid $colorBrightGray;
+  background-color: $colorCards;
+}
+
+@mixin hidden-btn {
+  background: url('/src/img/expand-reverse.svg') no-repeat left center;
+  width: 88px;
+}
+
+@mixin show-all-hover {
+  border: 1px solid $colorBorderLight;
+  border-radius: 3px;
+  background-color: $colorCards;
+}
+
+@mixin close-button {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-size: cover;
+  background-image: url('/src/img/close.svg');
+}

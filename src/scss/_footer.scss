@@ -1,0 +1,39 @@
+.footer {
+  &-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 70px;
+    padding: 16px;
+    background: $colorBc;
+    border-top: 1px solid $colorBorderLight;
+    gap: 16px;
+  }
+
+  &-text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+    color: $colorTextAdditional;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    &-container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &-text:first-of-type {
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  footer {
+    margin-left: 320px;
+  }
+}

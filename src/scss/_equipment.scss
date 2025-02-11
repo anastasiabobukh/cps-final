@@ -1,0 +1,155 @@
+.equipment {
+  width: 100%;
+  min-width: 320px;
+  margin-bottom: 8px;
+
+  &-name {
+    line-height: 24px;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+  }
+
+  &-title {
+    padding: 16px;
+    background-image: $colorGradient;
+    border-top: 1px solid $colorBorderLight;
+
+    &__text {
+      color: $colorTextAdditional;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+    }
+  }
+
+  &-types-wrapper {
+    margin-bottom: 16px;
+  }
+
+  &-inner-wrapper {
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  &-card {
+    @include swiper-card;
+    height: 160px;
+    padding: 16px;
+  }
+
+  &-btn {
+    border: 2px solid $colorButton;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background-color: $colorCards;
+    margin-left: auto;
+    margin-top: auto;
+  }
+
+  &-btn::before,
+  &-btn::after {
+    display: block;
+    content: '';
+    width: 2px;
+    height: 10px;
+    background-color: $colorButton;
+    border-radius: 5px;
+  }
+
+  &-btn::before {
+    transform: translateX(20px) translateY(2px) rotate(-45deg);
+  }
+
+  &-btn::after {
+    transform: translateX(20px) translateY(-2px) rotate(-315deg);
+  }
+
+  &-btn:hover {
+    cursor: pointer;
+    opacity: 50%;
+  }
+}
+
+.equipment-show-all {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .equipment {
+    margin-bottom: 12px;
+
+    &-title {
+      padding-left: 24px;
+    }
+
+    &-card {
+      width: 224px;
+      margin-bottom: 16px;
+    }
+
+    &-show-all {
+      display: block;
+      width: 124px;
+      height: 24px;
+      font-size: 16px;
+      font-weight: 500px;
+      letter-spacing: -0.2px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      cursor: pointer;
+      background: url('/src/img/expand.svg') no-repeat left center;
+    }
+
+    &-show-all--hidden {
+      @include hidden-btn;
+    }
+
+    &-show-all:hover {
+      @include show-all-hover;
+    }
+
+    &-types-wrapper {
+      flex-wrap: wrap;
+      align-content: space-between;
+    }
+
+    &--hidden {
+      height: 184px;
+    }
+
+    &-inner-wrapper {
+      padding-top: 24px;
+      padding-left: 24px;
+      padding-bottom: 0;
+    }
+  }
+
+  .show-all-wrapper {
+    margin-left: 24px;
+    margin-top: 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .equipment {
+    &-inner-wrapper {
+      padding-left: 32px;
+    }
+
+    &-title {
+      padding-left: 32px;
+    }
+
+    &-types-wrapper {
+      max-width: 1120px;
+    }
+  }
+
+  .show-all-wrapper {
+    margin-left: 32px;
+    margin-top: 24px;
+  }
+}

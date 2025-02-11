@@ -1,0 +1,95 @@
+.header {
+  &__inner {
+    display: flex;
+    width: 100%;
+    height: 88px;
+    align-items: center;
+    padding: 24px 16px;
+    border-bottom: thin solid $colorBorderLight;
+    background-color: $colorCards;
+  }
+
+  &-btn:not(:last-of-type) {
+    margin-right: 16px;
+  }
+
+  &__logo {
+    margin-right: auto;
+  }
+
+  &-divider {
+    width: 2px;
+    height: 32px;
+    margin: 0 20px;
+    border: none;
+    border-left: 2px solid $colorBrightGray;
+    border-radius: 1px;
+  }
+}
+
+.burger-menu-btn_icon {
+  background-image: url('/src/img/burger.svg');
+}
+
+.repair-btn_icon {
+  background-image: url('/src/img/repair.svg');
+}
+
+.checkstatus-btn_icon {
+  background-image: url('/src/img/checkstatus.svg');
+}
+
+.call-btn_icon {
+  background-image: url('/src/img/call.svg');
+}
+.chat-btn_icon {
+  background-image: url('/src/img/chat.svg');
+}
+
+.profile-btn_icon {
+  background-image: url('/src/img/profile.svg');
+}
+
+.btn {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-size: cover;
+}
+
+.call-btn,
+.feedback-btn,
+.profile-btn {
+  display: none;
+}
+
+.header-btn:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
+
+@media (min-width: 768px) {
+  .header {
+    &__inner {
+      min-width: 768px;
+    }
+
+    &-divider[hidden] {
+      display: block;
+      margin-left: 0;
+    }
+  }
+  .call-btn,
+  .feedback-btn,
+  .profile-btn {
+    display: block;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header {
+    display: none;
+  }
+}

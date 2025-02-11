@@ -1,0 +1,262 @@
+.main {
+  background-color: $colorBc;
+  padding-top: 20px;
+  height: 100%;
+
+  &-title {
+    border: 3px solid transparent;
+    border-left-color: $colorTurquoise;
+    padding-left: 12px;
+  }
+
+  &-buttons {
+    display: none;
+  }
+
+  &-menu {
+    &__list {
+      margin-top: 24px;
+      margin-left: 16px;
+      display: flex;
+      overflow: scroll;
+    }
+
+    &__item {
+      flex-shrink: 0;
+    }
+
+    &__link {
+      padding: 6px 15px;
+      display: inline-block;
+      border: 2px solid transparent;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.title {
+  &-text {
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: -0.6px;
+    line-height: 40px;
+  }
+
+  &-buttons {
+    display: flex;
+    margin-right: 32px;
+    gap: 32px;
+  }
+
+  &-btn {
+    width: 168px;
+    height: 40px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+}
+
+.title-btn:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
+
+.btn-label {
+  line-height: 24px;
+  font-size: 16px;
+  letter-spacing: -0.2px;
+}
+
+.main-menu__link {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: $colorTextAdditional;
+}
+
+.main-menu__link:focus,
+.main-menu__link:hover {
+  background-color: $colorCards;
+  border-color: $colorTurquoise;
+  border-radius: 6px;
+}
+
+.about {
+  &-text {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 24px;
+
+    &__paragraph {
+      height: auto;
+      width: 288px;
+      overflow: hidden;
+      width: 100%;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.2px;
+      color: $colorTextMain;
+    }
+
+    &--hidden {
+      height: 90px;
+    }
+  }
+
+  &-button {
+    width: 132px;
+    height: 24px;
+    font-size: 16px;
+    font-weight: 500px;
+    letter-spacing: -0.2px;
+    background-color: $colorBc;
+    border: none;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    background: url('/src/img/expand.svg') no-repeat left center;
+
+    &--hidden {
+      @include hidden-btn;
+    }
+
+    &__wrapper {
+      padding-top: 16px;
+    }
+  }
+  &-button:hover {
+    @include show-all-hover;
+  }
+}
+
+.about-image__wrapper {
+  padding-top: 16px;
+  padding-bottom: 24px;
+}
+
+.about-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .main {
+    &-title {
+      padding-left: 24px;
+      height: 40px;
+    }
+
+    &-menu {
+      &__list {
+        margin-left: 24px;
+      }
+    }
+  }
+
+  .about {
+    display: flex;
+    margin: 30px 24px;
+    gap: 48px;
+
+    &-text {
+      margin: 0;
+      flex: 1 1 50%;
+
+      &__paragraph {
+        height: auto;
+        line-height: 20px;
+        overflow: hidden;
+      }
+
+      &--hidden {
+        height: 160px;
+      }
+    }
+  }
+
+  &-button {
+    &__wrapper {
+      margin-top: 10px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.about-image {
+  border-radius: 4%;
+}
+
+.about-image__wrapper {
+  flex: 1 1 50%;
+}
+
+@media (min-width: 1440px) {
+  .main {
+    padding-top: 42px;
+
+    &-title {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+  }
+
+  .title {
+    &-text {
+      margin-left: 30px;
+      line-height: 40px;
+      font-size: 28px;
+      letter-spacing: -0.6px;
+    }
+  }
+
+  .main {
+    &-menu {
+      &__list {
+        width: 1063px;
+        min-height: 82px;
+        margin-left: 33px;
+        margin-top: 8px;
+        flex-wrap: wrap;
+        overflow: auto;
+      }
+      &__link {
+        line-height: 24px;
+        font-size: 16px;
+        letter-spacing: -0.2px;
+      }
+    }
+  }
+
+  .about {
+    margin-top: 7px;
+    margin-left: 35px;
+    gap: 24px;
+
+    &-text {
+      padding-top: 9px;
+    }
+
+    &-image {
+      border-radius: 4%;
+    }
+  }
+}
+
+@media (max-width: 1439px) {
+  .title-buttons {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  main {
+    margin-left: 320px;
+  }
+}

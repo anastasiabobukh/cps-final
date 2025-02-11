@@ -1,0 +1,16 @@
+.overlay,
+.overlay-brg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(75px);
+  z-index: 99;
+  display: none;
+}
+
+.overlay--active,
+.overlay-brg--active {
+  display: block;
+}

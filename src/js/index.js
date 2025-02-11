@@ -1,3 +1,7 @@
 import '../scss/style.scss'
 
-console.log('Works!')
+import './showAll.js'
+import './burgerMenu.js'
+import './modal.js'
+import './swiper.js'
+
