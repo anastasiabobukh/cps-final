@@ -471,19 +471,19 @@ a {
   gap: 12px; }
 
 .close-btn_icon {
-  background-image: url("/src/img/close.svg"); }
+  background-image: url(./static/close.svg); }
 
 .search-btn_icon {
-  background-image: url("/src/img/search.svg"); }
+  background-image: url(./static/search.svg); }
 
 .call-btn_icon {
-  background-image: url("/src/img/call.svg"); }
+  background-image: url(./static/call.svg); }
 
 .chat-btn_icon {
-  background-image: url("/src/img/chat.svg"); }
+  background-image: url(./static/chat.svg); }
 
 .profile-btn_icon {
-  background-image: url("/src/img/profile.svg"); }
+  background-image: url(./static/profile.svg); }
 
 .email {
   color: #1b1c21;
@@ -737,22 +737,22 @@ a {
   border-radius: 1px; }
 
 .burger-menu-btn_icon {
-  background-image: url("/src/img/burger.svg"); }
+  background-image: url(./static/burger.svg); }
 
 .repair-btn_icon {
-  background-image: url("/src/img/repair.svg"); }
+  background-image: url(./static/repair.svg); }
 
 .checkstatus-btn_icon {
-  background-image: url("/src/img/checkstatus.svg"); }
+  background-image: url(./static/checkstatus.svg); }
 
 .call-btn_icon {
-  background-image: url("/src/img/call.svg"); }
+  background-image: url(./static/call.svg); }
 
 .chat-btn_icon {
-  background-image: url("/src/img/chat.svg"); }
+  background-image: url(./static/chat.svg); }
 
 .profile-btn_icon {
-  background-image: url("/src/img/profile.svg"); }
+  background-image: url(./static/profile.svg); }
 
 .btn {
   flex-shrink: 0;
@@ -879,7 +879,7 @@ a {
   display: flex;
   justify-content: flex-end;
   cursor: pointer;
-  background: url("/src/img/expand.svg") no-repeat left center; }
+  background: url(./static/expand.svg) no-repeat left center; }
   .about-button--hidden {
     background: url("/src/img/expand-reverse.svg") no-repeat left center;
     width: 88px; }
@@ -1055,7 +1055,7 @@ a {
     justify-content: flex-end;
     align-items: center;
     cursor: pointer;
-    background: url("/src/img/expand.svg") no-repeat left center; }
+    background: url(./static/expand.svg) no-repeat left center; }
   .show-all-brands--hidden {
     background: url("/src/img/expand-reverse.svg") no-repeat left center;
     width: 88px; }
@@ -1152,7 +1152,7 @@ a {
       justify-content: flex-end;
       align-items: center;
       cursor: pointer;
-      background: url("/src/img/expand.svg") no-repeat left center; }
+      background: url(./static/expand.svg) no-repeat left center; }
     .equipment-show-all--hidden {
       background: url("/src/img/expand-reverse.svg") no-repeat left center;
       width: 88px; }
