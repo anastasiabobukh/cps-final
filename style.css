@@ -593,7 +593,7 @@ a {
   border-radius: 50%;
   border: none;
   background-size: cover;
-  background-image: url("/src/img/close.svg");
+  background-image: url(./static/close.svg);
   margin-left: 16px;
   margin-bottom: 32px; }
 
@@ -688,7 +688,7 @@ a {
   border-radius: 50%;
   border: none;
   background-size: cover;
-  background-image: url("/src/img/close.svg");
+  background-image: url(./static/close.svg);
   margin-left: 16px;
   margin-bottom: 32px; }
 
@@ -852,6 +852,9 @@ a {
   border-color: #41f6d7;
   border-radius: 6px; }
 
+a:focus-visible {
+  outline: none; }
+
 .about-text {
   margin-left: 16px;
   margin-right: 16px;
@@ -881,7 +884,7 @@ a {
   cursor: pointer;
   background: url(./static/expand.svg) no-repeat left center; }
   .about-button--hidden {
-    background: url("/src/img/expand-reverse.svg") no-repeat left center;
+    background: url(./static/expand-reverse.svg) no-repeat left center;
     width: 88px; }
   .about-button__wrapper {
     padding-top: 16px; }
@@ -1057,7 +1060,7 @@ a {
     cursor: pointer;
     background: url(./static/expand.svg) no-repeat left center; }
   .show-all-brands--hidden {
-    background: url("/src/img/expand-reverse.svg") no-repeat left center;
+    background: url(./static/expand-reverse.svg) no-repeat left center;
     width: 88px; }
   .show-all-brands:hover {
     border: 1px solid #d9fff5;
@@ -1154,7 +1157,7 @@ a {
       cursor: pointer;
       background: url(./static/expand.svg) no-repeat left center; }
     .equipment-show-all--hidden {
-      background: url("/src/img/expand-reverse.svg") no-repeat left center;
+      background: url(./static/expand-reverse.svg) no-repeat left center;
       width: 88px; }
     .equipment-show-all:hover {
       border: 1px solid #d9fff5;
