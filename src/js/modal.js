@@ -40,3 +40,18 @@ closefeedbackButton.addEventListener('click', function () {
   feedbackModal.classList.add('feedback-modal--hide');
   overlay.classList.remove('overlay--active');
 });
+
+
+overlay.addEventListener('click', function () {
+  callModal.classList.add('call-modal--hide');
+  feedbackModal.classList.add('feedback-modal--hide');
+  overlay.classList.remove('overlay--active');
+});
+
+callModal.addEventListener('click', function (event) {
+  event.stopPropagation();
+});
+
+feedbackModal.addEventListener('click', function (event) {
+  event.stopPropagation();
+});
