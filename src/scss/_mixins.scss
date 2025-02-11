@@ -8,7 +8,7 @@
 }
 
 @mixin hidden-btn {
-  background: url('/src/img/expand-reverse.svg') no-repeat left center;
+  background: url('../img/expand-reverse.svg') no-repeat left center;
   width: 88px;
 }
 
@@ -25,5 +25,5 @@
   border-radius: 50%;
   border: none;
   background-size: cover;
-  background-image: url('/src/img/close.svg');
+  background-image: url('../img/close.svg');
 }
